@@ -37,12 +37,6 @@ public class StudentController {
 
 			String result = null;
 
-			/*
-			 * customResponse = restTemplate.getForObject(
-			 * "http://localhost:9090/studentResult/getMarks?rollNum=" + rollNum,
-			 * CustomResponse.class);
-			 */
-
 			if (student != null) {
 				int percentage = (int) ((Float.valueOf(student.getMarks()) / 600) * 100);
 
